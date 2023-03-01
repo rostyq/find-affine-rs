@@ -1,0 +1,21 @@
+[package]
+name = "find-affine"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rostyslav Bohomaz <rostyslav.db@gmail.com>"]
+description = "Find affine transformation for a pair of three points"
+keywords = ["linear-algebra", "affine", "transformation"]
+repository = "https://github.com/rostyq/find-affine-rs"
+license = "MIT"
+
+[[bench]]
+name = "main"
+harness = false
+
+[dependencies]
+nalgebra = { version = "0.32.1", default-features = false }
+
+[dev-dependencies]
+approx = { version = "0.5.1", default-features = false }
+criterion = "0.4.0"
+nalgebra = { version = "0.32.1", default-features = false, features = ["std"] }
